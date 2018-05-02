@@ -111,12 +111,6 @@ export default class Presentation extends React.Component {
                 <Text fill bold>
                     Extract tweets from Twitter using Twitter Python library
                 </Text>
-                <CodePane
-                  lang="python"
-                  source={twitter}
-                  margin="20px auto"
-                  overflow="overflow"
-                />
             </Slide>
             <Slide transition={['fade']}>
                 <Text fill bold textColor="white">
