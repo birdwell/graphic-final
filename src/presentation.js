@@ -24,6 +24,7 @@ import createTheme from 'spectacle/lib/themes/default';
 import layout from 'spectacle/lib/components/layout';
 import watson from './assets/watson.jpg';
 import FirstExample from './first-example';
+import SecondExample from './second-example';
 
 // Require CSS
 require('normalize.css');
@@ -128,9 +129,21 @@ export default class Presentation extends React.Component {
             </Slide>
             <Slide transition={['fade']}>
               <Text fill bold textColor="white">
-                Use Three.js for 3D visuals. This includes building marbles, container, physics interactions. 
+                Use Three.js for 3D visuals. (marbles, container, physics)
               </Text>
+              <Text fill bold textColor="white">v0.0.1</Text>
               <FirstExample />
+            </Slide>
+            <Slide transition={['fade']}>
+              <Text fill bold textColor="white">
+                This is our v1.0.0! It's where we started realizing our idea. 
+              </Text>
+              <SecondExample />
+            </Slide>
+            <Slide transition={['fade']} bgDarken="0.2" bgImage="https://media.giphy.com/media/99NDYpVN7DnQQ/source.gif">
+                <Heading fill bold size={1} textColor="white">
+                Emojis
+                </Heading>
             </Slide>
         </Deck>;
   }
