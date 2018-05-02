@@ -1,1 +1,21 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/graphics-final/manifest.json"><link rel="shortcut icon" href="/graphics-final/favicon.ico"><title>Spectacle Presentation</title><link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"><link href="/graphics-final/static/css/main.144c0998.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script type="text/javascript" src="/graphics-final/static/js/main.632b17ca.js"></script></body></html>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/graphics-final/manifest.json"><link rel="shortcut icon" href="/graphics-final/favicon.ico"><title>Spectacle Presentation</title><link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"><link href="/graphics-final/static/css/main.aade9883.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><script id="vertex_shader" type="x-shader/x-vertex">varying vec3 vNormal;
+              
+              void main() {
+              
+                  vNormal = normal;
+              
+                  gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+              
+              }</script><script id="fragment_shader" type="x-shader/x-fragment">uniform sampler2D texture;
+            
+            varying vec3 vNormal;
+            
+            void main() {
+            
+              vec2 uv = normalize( vNormal ).xy * 0.5 + 0.5;
+            
+              vec3 color = texture2D( texture, uv ).rgb;
+                  
+              gl_FragColor = vec4( color, 1.0 );
+            
+            }</script><script type="text/javascript" src="/graphics-final/static/js/main.4867531f.js"></script></body></html>

@@ -1,8 +1,15 @@
 {
-  "main.css": "static/css/main.144c0998.css",
-  "main.css.map": "static/css/main.144c0998.css.map",
-  "main.js": "static/js/main.632b17ca.js",
-  "main.js.map": "static/js/main.632b17ca.js.map",
+  "main.css": "static/css/main.aade9883.css",
+  "main.css.map": "static/css/main.aade9883.css.map",
+  "main.js": "static/js/main.4867531f.js",
+  "main.js.map": "static/js/main.4867531f.js.map",
+  "static/media/angry.png": "static/media/angry.92782d5b.png",
+  "static/media/disgust.jpg": "static/media/disgust.bca816c6.jpg",
+  "static/media/expectation.jpg": "static/media/expectation.b7db26f0.jpg",
+  "static/media/fear.png": "static/media/fear.bba997d9.png",
+  "static/media/joy.png": "static/media/joy.e01aac7c.png",
   "static/media/particle.png": "static/media/particle.9269c772.png",
+  "static/media/sad.png": "static/media/sad.0eaf2e75.png",
+  "static/media/twitter.svg": "static/media/twitter.44a8dba2.svg",
   "static/media/watson.jpg": "static/media/watson.bfd1103c.jpg"
 }
