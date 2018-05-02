@@ -25,6 +25,7 @@ import layout from 'spectacle/lib/components/layout';
 import watson from './assets/watson.jpg';
 import FirstExample from './first-example';
 import SecondExample from './second-example';
+import { ThirdExample } from './third-example';
 
 // Require CSS
 require('normalize.css');
@@ -144,6 +145,71 @@ export default class Presentation extends React.Component {
                 <Heading fill bold size={1} textColor="white">
                 Emojis
                 </Heading>
+            </Slide>
+            <Slide transition={['fade']} >
+                <Heading size={4} caps textColor="green">
+                    Overall Process
+                </Heading>
+                <List textColor="black">
+                    <ListItem>Built backend with python and flask</ListItem>
+                    <ListItem>Built frontend with reactjs and threejs</ListItem>
+                </List>
+            </Slide>
+            <Slide transition={['fade']} >
+                <Heading size={4} caps textColor="green">
+                    Tasks
+                </Heading>
+                <Text textAlign="left">
+                    Frontend & Graphics
+                    <List>
+                        <ListItem>Get threejs running in a reactjs app</ListItem>
+                        <ListItem>Spheres & Emoji Cover</ListItem>
+                        <ListItem>Interface before Experience</ListItem>
+                        <ListItem>Emoji Filtering & Tweets</ListItem>
+                    </List>
+                </Text>
+            
+            </Slide>
+            <Slide transition={['fade']}>
+                <Heading size={4} caps textColor="green">
+                    Tasks
+                </Heading>
+                <Text textAlign="left">
+                    Physics
+                    <List>
+                        <ListItem>Bouncing</ListItem>
+                        <ListItem>Mass, Size & Emotion</ListItem>
+                        <ListItem>Morphing into one</ListItem>
+                        <ListItem>Orbital Rotation</ListItem>
+                    </List>
+                </Text>
+            </Slide>
+            <Slide transition={['fade']}>
+                <ThirdExample />
+            </Slide>
+            <Slide transition={['fade']}>
+                <Heading size={4} caps textColor="green">
+                    Expectation vs Reality
+                </Heading>
+                <Image src={require('./assets/expectation.jpg')} height="200" />
+                {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/HluANRwPyNo?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1;mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> */}
+                <List>
+                </List>
+            </Slide>
+            <Slide transition={['fade']}>
+                <Heading size={4} caps textColor="green">
+                    So close...
+                </Heading>
+                <Image src="https://media.giphy.com/media/qLWdMYX1NYF2g/source.gif" height="200" />
+                <List>
+                </List>
+            </Slide>
+            <Slide transition={['fade']}>
+                <Heading size={4} caps textColor="green">
+                    Future Development
+                </Heading>
+                <List>
+                </List>
             </Slide>
         </Deck>;
   }
