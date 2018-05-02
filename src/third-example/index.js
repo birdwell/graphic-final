@@ -1,0 +1,1 @@
+export { default as ThirdExample } from './three-entry';
