@@ -22,7 +22,8 @@ import {
 // Import theme
 import createTheme from 'spectacle/lib/themes/default';
 import layout from 'spectacle/lib/components/layout';
-import {twitter} from './code.js';
+import watson from './assets/watson.jpg';
+import FirstExample from './first-example';
 
 // Require CSS
 require('normalize.css');
@@ -116,7 +117,20 @@ export default class Presentation extends React.Component {
                 <Text fill bold textColor="white">
                     Feed tweets into Watson Tone Analyzer
                 </Text>
-                <Image src="https://media.giphy.com/media/l3vR16pONsV8cKkWk/source.gif" width="300" style={{ borderRadius: '30%' }} />
+                <Layout fill>
+                    <Fill>
+                      <Image src="https://media.giphy.com/media/l3vR16pONsV8cKkWk/source.gif" width="250" style={{ borderRadius: '30%' }} />
+                    </Fill>
+                    <Fill>
+                      <Image src={watson} />
+                    </Fill>
+                </Layout>
+            </Slide>
+            <Slide transition={['fade']}>
+              <Text fill bold textColor="white">
+                Use Three.js for 3D visuals. This includes building marbles, container, physics interactions. 
+              </Text>
+              <FirstExample />
             </Slide>
         </Deck>;
   }

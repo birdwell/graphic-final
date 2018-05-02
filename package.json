@@ -9,7 +9,8 @@
     "prismjs": "1.6.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "spectacle-scripts": "2.0.0"
+    "spectacle-scripts": "2.0.0",
+    "three": "^0.92.0"
   },
   "scripts": {
     "start": "react-scripts start",
