@@ -203,9 +203,6 @@ export default class Presentation extends React.Component {
                 </Text>
             </Slide>
             <Slide transition={['fade']} bgColor="white">
-                <Text size={5} caps bold textColor="black">
-                    Quick Glimpse of v2.0.0
-                </Text>
                 <ThirdExample />
             </Slide>
             <Slide transition={['fade']} bgImage="https://media.giphy.com/media/rVbAzUUSUC6dO/giphy.gif" bgDarken="0.2">
