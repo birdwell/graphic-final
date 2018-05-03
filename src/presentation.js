@@ -218,10 +218,7 @@ export default class Presentation extends React.Component {
                 <List>
                     <ListItem>Glass...</ListItem>
                     <ListItem>Glow from inside sphere</ListItem>
-                    <ListItem>
-                        Colored marbles made it hard to understand what was
-                        happening.
-                    </ListItem>
+                    <ListItem>Colored marbles</ListItem>
                 </List>
             </Slide>
             <Slide transition={['fade']}>
@@ -244,7 +241,7 @@ export default class Presentation extends React.Component {
                     </ListItem>
                     <ListItem>Background scenery</ListItem>
                     <ListItem>
-                        Unsure if possible: livefeed of tweets
+                        Exploration of a livefeed of tweets
                     </ListItem>
                 </List>
             </Slide>
