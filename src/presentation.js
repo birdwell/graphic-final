@@ -216,12 +216,12 @@ export default class Presentation extends React.Component {
                     Expectation vs Reality
                 </Heading>
                 <List>
+                    <ListItem>Glass...</ListItem>
+                    <ListItem>Glow from inside sphere</ListItem>
                     <ListItem>
                         Colored marbles made it hard to understand what was
                         happening.
                     </ListItem>
-                    <ListItem>One by One release</ListItem>
-                    <ListItem>Vessel</ListItem>
                 </List>
             </Slide>
             <Slide transition={['fade']}>
@@ -230,7 +230,8 @@ export default class Presentation extends React.Component {
                 </Heading>
                 <Image src="https://media.giphy.com/media/qLWdMYX1NYF2g/source.gif" height="200" />
                 <List>
-                    <ListItem />
+                    <ListItem>Vessel/Container</ListItem>
+                    <ListItem>One by One release</ListItem>
                 </List>
             </Slide>
             <Slide transition={['fade']}>
@@ -248,9 +249,7 @@ export default class Presentation extends React.Component {
                 </List>
             </Slide>
             <Slide transition={['fade']}>
-                <Heading>
-                    Project Link
-                </Heading>
+                <Heading>Project Link</Heading>
                 <List>
                     <ListItem>http://www.tweetemoji.com/</ListItem>
                     <ListItem>http://www.💻💯.ws</ListItem>
