@@ -121,54 +121,56 @@ export default class Presentation extends React.Component {
                 </Text>
                 <Layout fill>
                     <Fill>
-                      <Image src="https://media.giphy.com/media/l3vR16pONsV8cKkWk/source.gif" width="250" style={{ borderRadius: '30%' }} />
+                        <Image src="https://media.giphy.com/media/l3vR16pONsV8cKkWk/source.gif" width="250" style={{ borderRadius: '30%' }} />
                     </Fill>
                     <Fill>
-                      <Image src={watson} />
+                        <Image src={watson} />
                     </Fill>
                 </Layout>
             </Slide>
             <Slide transition={['fade']}>
-              <Text fill bold textColor="white">
-                Use Three.js for 3D visuals. (marbles, container, physics)
-              </Text>
-              <Text fill bold textColor="white">v0.0.1</Text>
-              <FirstExample />
+                <Text fill bold textColor="white">
+                    Use Three.js for 3D visuals. (marbles, container, physics)
+                </Text>
+                <Text fill bold textColor="white">
+                    v0.0.1
+                </Text>
+                <FirstExample />
             </Slide>
             <Slide transition={['fade']}>
-              <Text fill bold textColor="white">
-                This is our v1.0.0! It's where we started realizing our idea. 
-              </Text>
-              <SecondExample />
+                <Text fill bold textColor="white">
+                    This is our v1.0.0! It's where we started realizing our idea.
+                </Text>
+                <SecondExample />
             </Slide>
             <Slide transition={['fade']} bgDarken="0.2" bgImage="https://media.giphy.com/media/99NDYpVN7DnQQ/source.gif">
                 <Heading fill bold size={1} textColor="white">
-                Emojis
+                    Emojis
                 </Heading>
             </Slide>
-            <Slide transition={['fade']} >
+            <Slide transition={['fade']}>
                 <Heading size={4} caps textColor="green">
                     Overall Process
                 </Heading>
                 <List textColor="black">
                     <ListItem>Built backend with python and flask</ListItem>
-                    <ListItem>Built frontend with reactjs and threejs</ListItem>
+                    <ListItem>
+                        Built frontend with reactjs and threejs
+                    </ListItem>
                 </List>
             </Slide>
-            <Slide transition={['fade']} >
+            <Slide transition={['fade']}>
                 <Heading size={4} caps textColor="green">
                     Tasks
                 </Heading>
                 <Text textAlign="left">
-                    Frontend & Graphics
+                    Backend
                     <List>
-                        <ListItem>Get threejs running in a reactjs app</ListItem>
-                        <ListItem>Spheres & Emoji Cover</ListItem>
-                        <ListItem>Interface before Experience</ListItem>
-                        <ListItem>Emoji Filtering & Tweets</ListItem>
+                        <ListItem>Connect to Twitter API Search</ListItem>
+                        <ListItem>Send text to Watson Cloud API</ListItem>
+                        <ListItem>Caching of past hashtags</ListItem>
                     </List>
                 </Text>
-            
             </Slide>
             <Slide transition={['fade']}>
                 <Heading size={4} caps textColor="green">
@@ -179,8 +181,24 @@ export default class Presentation extends React.Component {
                     <List>
                         <ListItem>Bouncing</ListItem>
                         <ListItem>Mass, Size & Emotion</ListItem>
-                        <ListItem>Morphing into one</ListItem>
-                        <ListItem>Orbital Rotation</ListItem>
+                        <ListItem>Grad: Morphing into one</ListItem>
+                        <ListItem>Grad: Orbital Rotation</ListItem>
+                    </List>
+                </Text>
+            </Slide>
+            <Slide transition={['fade']}>
+                <Heading size={4} caps textColor="green">
+                    Tasks
+                </Heading>
+                <Text textAlign="left">
+                    Frontend & Graphics
+                    <List>
+                        <ListItem>
+                            Get threejs running in a reactjs app
+                        </ListItem>
+                        <ListItem>Spheres & Emoji Cover</ListItem>
+                        <ListItem>Interface before Experience</ListItem>
+                        <ListItem>Emoji Filtering & Tweets</ListItem>
                     </List>
                 </Text>
             </Slide>
@@ -190,13 +208,20 @@ export default class Presentation extends React.Component {
                 </Text>
                 <ThirdExample />
             </Slide>
+            <Slide transition={['fade']} bgImage="https://media.giphy.com/media/rVbAzUUSUC6dO/giphy.gif" bgDarken="0.2">
+                <Heading margin="200px 0 0 0">Live Demo</Heading>
+            </Slide>
             <Slide transition={['fade']}>
                 <Heading size={4} caps textColor="green">
                     Expectation vs Reality
                 </Heading>
-                <Image src={require('./assets/expectation.jpg')} height="200" />
-                {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/HluANRwPyNo?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1;mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> */}
                 <List>
+                    <ListItem>
+                        Colored marbles made it hard to understand what was
+                        happening.
+                    </ListItem>
+                    <ListItem>One by One release</ListItem>
+                    <ListItem>Vessel</ListItem>
                 </List>
             </Slide>
             <Slide transition={['fade']}>
@@ -205,6 +230,7 @@ export default class Presentation extends React.Component {
                 </Heading>
                 <Image src="https://media.giphy.com/media/qLWdMYX1NYF2g/source.gif" height="200" />
                 <List>
+                    <ListItem />
                 </List>
             </Slide>
             <Slide transition={['fade']}>
@@ -212,7 +238,26 @@ export default class Presentation extends React.Component {
                     Future Development
                 </Heading>
                 <List>
+                    <ListItem>
+                        More controls for the user (eq date filter)
+                    </ListItem>
+                    <ListItem>Background scenery</ListItem>
+                    <ListItem>
+                        Unsure if possible: livefeed of tweets
+                    </ListItem>
                 </List>
+            </Slide>
+            <Slide transition={['fade']}>
+                <Heading>
+                    Project Link
+                </Heading>
+                <List>
+                    <ListItem>http://www.tweetemoji.com/</ListItem>
+                    <ListItem>http://www.💻💯.ws</ListItem>
+                </List>
+            </Slide>
+            <Slide transition={['fade']} bgImage="https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif">
+                <Heading>Questions</Heading>
             </Slide>
         </Deck>;
   }
